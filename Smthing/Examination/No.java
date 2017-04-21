@@ -1,4 +1,4 @@
-package Examination;
+package Smthing.Examination;
 
 import java.util.Scanner;
 

@@ -17,13 +17,13 @@ public class MyLinkedList {
         myLinkedList.add("a");
         myLinkedList.add("b");
         myLinkedList.add("c");
-//        System.out.println(myLinkedList.first());
-//        System.out.println(myLinkedList.last());
-//        System.out.println(myLinkedList.get(1));
-//        System.out.println(myLinkedList.size());
-//        myLinkedList.remove(1);
-//        myLinkedList.remove(1);
-//        myLinkedList.remove(0);
+       System.out.println(myLinkedList.first());
+       System.out.println(myLinkedList.last());
+       System.out.println(myLinkedList.get(1));
+       System.out.println(myLinkedList.size());
+       myLinkedList.remove(1);
+       myLinkedList.remove(1);
+       myLinkedList.remove(0);
         System.out.println(myLinkedList); // c
     }
 

@@ -11,12 +11,12 @@ public class ArrayListTest1 {
         strings.add("d");
         List<String> strings1 = new ArrayList<>();
         strings1.add("a");
-        strings1.add("b");
+        strings1.add("a");
         List<String> strings2 = new ArrayList<>();
         strings2.add("a");
         strings2.add("b");
         strings2.add("c");
-        System.out.println(strings1.equals(strings2));// equals 意思是如果两个类元素值一样，并且顺序相同返回true反之false
+        System.out.println(strings1.equals(strings1));// equals 意思是如果两个类元素值一样，并且顺序相同返回true反之false
 
         List<String> strings3 = strings2.subList(1, 3);//3为2的视图效果// subList 提取当前数组索引位置的起始为1，结束部位为3
 

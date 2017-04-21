@@ -8,13 +8,13 @@ import java.util.Scanner;
 public class Three {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("请输入你要查的月份");
+        System.out.println("请输入你要查次数");
         int s1, s2, f;
-        s1 = 1;//一月
-        s2 = 1;//二月
-        /*int n;//第N个月
-        f = in.nextInt();//兔子
-        while (true) {
+        s1 = 1;//一
+        s2 = 1;//二
+        int n;//第N个
+        f = in.nextInt();//
+        /*while (true) {
             if (s1 == 1 || s2 == 1) {
                 System.out.println(f + "n" + s1);
                 f++;
@@ -48,4 +48,4 @@ public class Three {
 
             }
         }
-}
+    }
