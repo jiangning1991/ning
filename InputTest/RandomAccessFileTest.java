@@ -7,7 +7,7 @@ import java.io.RandomAccessFile;
  */
 public class RandomAccessFileTest {
     public static void main(String[] args) {
-        try (RandomAccessFile randomAccessFile = new RandomAccessFile("raf", "rw")){
+        try (RandomAccessFile randomAccessFile = new RandomAccessFile("raa", "rw")){
             for (int i = 0; i < 10; i++) {
                 randomAccessFile.writeDouble(i * 0.5);
             }

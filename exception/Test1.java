@@ -8,9 +8,9 @@ public class Test1 {
         try {
             System.out.println("hello".charAt(4));
 
-            System.out.println((new int[]{1, 2, 3})[-1]);
+            System.out.println((new int[]{1, 2, 3})[0]);
 
-            System.out.println(1 / 1);
+            System.out.println(1 / 0);
 
             System.out.println(Integer.valueOf("123"));
         }catch (ArrayIndexOutOfBoundsException e){

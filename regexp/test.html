@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+       // i	执行对大小写不敏感的匹配。
+       // g	执行全局匹配（查找所有匹配而非在找到第一个匹配后停止）。
+       // m	执行多行匹配。
+        var patt1 = /e/; // new RegExp('e'); // pattern 模式
+        console.log(patt1.test("hello"));
+        var patt2 = /l/g;// g 是执行全局匹配
+        //输出全部字符l的匹配
+        patt1.compile('l', 'g'); // global 全部
+        var result = patt1.exec("hellollll");
+        do {
+            console.log(result);
+            result = patt1.exec("hellollll");
+        } while (result != null);
+        var patt3 = /e/i;//i 执行对大小写不敏感的匹配，
+        console.log(patt3.test('HELLO'));//返回true
+        var patt4 = /w3school/i;//对字符串中的 "w3school" 进行不分大小写的搜索
+        console.log('Visit W3School....'.match(patt4));//输出   //match 比较
+    </script>
+</head>
+<body>
+<pre>
+    RegExp = Regular Expression 正则 表达式
+    Email
+    tester@test.com
+</pre>
+</body>
+</html>
