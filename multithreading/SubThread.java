@@ -11,7 +11,6 @@ public class SubThread extends Thread {
         subThread.start();
         System.out.println("test...");
     }
-
     @Override
     public void run() {
         for (int i = 0; i < 10; i++) {

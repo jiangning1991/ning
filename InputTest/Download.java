@@ -8,19 +8,21 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
- * Created by jiangning on 2017/4/20.
+ * Created by mingfei.net@gmail.com
+ * 4/18/17 11:53
+ * https://github.com/thu/JavaSE_20171
  */
 public class Download {
-    private static final String IMAGE_URL = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492751232497&di=2fa8dab41acc8a279171738f320f29db&imgtype=0&src=http%3A%2F%2Fatt.img.xiushuang.com%2Fallimg%2F140826%2F153H35446-0.jpg";
+    private static final String IMAGE_URL = "http://s.cn.bing.net/th?id=OJ.58V1JdyCq3tEwg&pid=MSNJVFeeds/1.2.tif";
 
     public static void main(String[] args) {
         try {
             URL url = new URL(IMAGE_URL);
             try (
                     InputStream inputStream = url.openStream();
-                    OutputStream outputStream = new FileOutputStream("test.jpg")//把图片下载到指定位置
+                    OutputStream outputStream = new FileOutputStream("test.png")
             ) {
-                System.out.println(inputStream.available());//运行时间
+                System.out.println(inputStream.available());
                 int i;
                 while ((i = inputStream.read()) != -1) {
                     outputStream.write(i);
